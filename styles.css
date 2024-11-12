@@ -49,7 +49,7 @@ nav ul li a {
 
 /* Hero-Bereich */
 .hero {
-    background-color: #108115;
+    background-color: #ffffff;
     padding: 50px;
     text-align: left;
 }
@@ -59,9 +59,13 @@ nav ul li a {
 }
 
 .hero-images {
-    display: flex;
+
     justify-content: center;
-    gap: 50px;
+
+    max-width: 100%; /* Das Bild passt sich der Breite des Containers an */
+    height: auto; /* Die Höhe bleibt proportional zur Breite */
+    display: block; /* Entfernt mögliche Abstände unter dem Bild */
+    margin: 0 auto; /* Zentriert das Bild, wenn es in einem Container ist */
 }
 
 /* Punkte-Bereich */
