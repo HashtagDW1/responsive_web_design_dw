@@ -1,0 +1,183 @@
+/* Globales Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    background-color: #eff3f0;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.login-btn {
+    background-color: rgb(18, 105, 41);
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hero-Bereich */
+.hero {
+    background-color: #108115;
+    padding: 50px;
+    text-align: left;
+}
+
+.hero h2 {
+    color: #18701b;
+}
+
+.hero-images {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* Punkte-Bereich */
+.points-section {
+    background-color: #e0f7e9;
+    padding: 20px;
+    text-align: center;
+}
+
+.points-tracker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    width: 100px;
+    height: 10px;
+    background-color: #4CAF50;
+    margin: 0 10px;
+}
+
+.sammeln {
+    background-color: #146617;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+.einlösen {
+    background-color: #ffffff;
+    color: rgb(12, 82, 20);
+    border-color: #146617;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+
+/* Mission-Bereich */
+.mission {
+    padding: 40px;
+    text-align: center;
+}
+
+.mission-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.mission-item img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Produkte-Bereich */
+.products {
+    padding: 40px;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-item img {
+    width: 150px;
+    height: auto;
+}
+
+.more-products {
+    display: block;
+    margin-top: 10px;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+/* Newsletter-Bereich */
+.newsletter {
+    background-color: #f0f0f0;
+    padding: 30px;
+    text-align: center;
+}
+
+.newsletter form input {
+    padding: 10px;
+    margin-right: 5px;
+    width: 200px;
+}
+
+.newsletter form button {
+    background-color: #19621b;
+    color: white;
+    padding: 10px 20px;
+    border-style: outset;
+    cursor: pointer;
+
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #1d701d;
+    text-decoration: none;
+}
