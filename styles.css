@@ -43,7 +43,8 @@ nav ul li {
 
 nav ul li a {
     color: rgb(0, 0, 0);
-    text-decoration: none;
+    text-decoration:none;
+    
 }
 
 .login-btn {
@@ -52,43 +53,29 @@ nav ul li a {
     padding: 5px 10px;
     border-radius: 15px;
     border: none;
-    cursor: pointer;
+
 }
 
 /* Hero-Bereich */
 .hero {
     background-color: #ffffff;
-
 }
 
-.hero-images h2{
-    margin-left: 10%;
+.hero h2{
+    margin-left: 3%;
     color: #18701b;
-    position: absolute;
-    font-size: 90px;
-
+    font-size: 80px;
+   
 }
 
 .hero-images {
-
-    justify-content: center;
-    display: flex;
-    margin: 0 auto; /* Zentriert das Bild, wenn es in einem Container ist */
+    max-width: 1425px;
+    max-height: auto;
+    margin-left: 80px;
+    margin-top: -150px;
+    
 }
 
-/* Punkte-Bereich */
-.points-section {
-    background-color: #ffffff;
-    padding: 20px;
-    text-align: center;
-}
-
-.points-tracker {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-}
 
 
 .sammeln {
@@ -98,7 +85,7 @@ nav ul li a {
     border: none;
     padding: 10px 20px;
     margin: 5px;
-    cursor: pointer;
+    
 }
 .einlösen {
     background-color: #ffffff;
@@ -107,57 +94,75 @@ nav ul li a {
     border-radius: 15px;
     padding: 10px 20px;
     margin: 5px;
-    cursor: pointer;
+    
 }
 
-.tacho {
-    position: relative;
-    width: 200px;
-    height: 100px;
-    background: conic-gradient(#1bb13e 0% 50%, #ffffff 50% 100%); /* Hintergrund für den halbkreisförmigen Tacho */
-    border-radius: 100px 100px 0 0; /* Halbkreis */
-    overflow: hidden;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
 
-.tacho-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
 
-.labels {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-    font-size: 14px;
-    color: #333;
-}
 
 /* Mission-Bereich */
 .mission {
-    padding: 40px;
+    
     text-align: center;
+
 }
 
-.mission-items {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+
+.carousel-parent {
+
+    margin-left: 100px;
+	transform-style: preserve-3d;
+	transform: translateZ(var(--z-neg)) rotateY(0);
+	animation: carousel 15s infinite forwards;
+}
+.carousel-item {
+    
+	position:absolute;
+	justify-content: center;
+	width: var(--caro-width);
+	height: var(--caro-height);
+	border-radius: 10px;
+}
+.carousel-item:nth-child(1) {
+	background-color: #146617;
+	background-size: cover;
+	transform: rotateY(0) translateZ(var(--z-achse));
+}
+.carousel-item:nth-child(2) {
+	background-color: #146617;
+	background-size: cover;
+	transform: rotateY(120deg) translateZ(var(--z-achse));
+}
+.carousel-item:nth-child(3) {
+	background-color: #146617;
+	background-size: cover;
+	transform: rotateY(240deg) translateZ(var(--z-achse));
 }
 
-.mission-item img {
-    width: 50px;
-    height: 50px;
+@keyframes carousel {  
+	0%, 20% { transform: translateZ(var(--z-neg)) rotateY(0) }
+ 	25%, 45% { transform: translateZ(var(--z-neg)) rotateY(-120deg) }
+	55%, 75% { transform: translateZ(var(--z-neg)) rotateY(-240deg) }
+	85%, 100% { transform: translateZ(var(--z-neg)) rotateY(-360deg) }
 }
+
+
+:root {
+	--z-achse: 100px;
+	--z-neg: -100px;
+	--caro-width: 300px;
+	--caro-height: 300px;
+}
+
+
+
+
+.points-section{
+
+    text-align: center;
+
+}
+
 
 /* Produkte-Bereich */
 .products {
@@ -179,8 +184,8 @@ nav ul li a {
 .more-products {
     display: block;
     margin-top: 10px;
-    color: #4CAF50;
-    text-decoration: none;
+    color: #1e6b21;
+    text-decoration: underline;
 }
 
 /* Newsletter-Bereich */
