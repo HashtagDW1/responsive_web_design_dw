@@ -139,11 +139,11 @@ nav ul li a {
 
 .schrift1{
     color: #000000;
-    font-size: larger;
-    margin-left: 4%;
+    font-size: calc(16px + (27 - 16) * ((100vw - 320px) / (1600 - 320)));
+    
     margin-right: 15%;
     margin-top:5%;
-    max-width: 20%;
+    max-width: 35%;
 
 }
 
@@ -168,8 +168,9 @@ nav ul li a {
 .hero-images {
     padding-top: 4%;
     display: flex;
-    margin-left:8%;
+    margin-left:10%;
     height: auto;
+    margin-right: 8%;
    
 	
     
