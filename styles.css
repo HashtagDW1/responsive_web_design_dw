@@ -116,22 +116,38 @@ nav ul li a {
 
 .hero {
     background-color: #ffffff00;
-    height: 690px;
+    height: 750px;
     
 }
 
 .hero h2{
-    max-width: 55%;
-    margin-left: 3%;
+    padding-top: 3%;
     color: #18701b;
-    font-size:calc(36px + (60 - 16) * ((100vw - 320px) / (1600 - 320)));
-    position: absolute;
-    z-index: 1; 
-	
+    font-size:calc(36px + (50 - 16) * ((100vw - 320px) / (1600 - 320)));
     
 }
 
-.hero-images:hover{
+
+.box1{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+.schrift1{
+    color: #000000;
+    font-size: larger;
+    margin-left: 4%;
+    margin-right: 15%;
+    margin-top:5%;
+    max-width: 20%;
+
+}
+
+.picture1:hover{
     -webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);
 	-ms-transform: scale(1.1);
@@ -140,17 +156,27 @@ nav ul li a {
 
 }
 
+.picture2:hover{
+    -webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+
+}
 
 .hero-images {
-    
-    
-    margin-left:40%;
-    margin-top: 10%;
-    padding-top: 100px;
-    z-index: -1;
+    padding-top: 4%;
+    display: flex;
+    margin-left:8%;
     height: auto;
-	/* SCALE */
-	-webkit-transform: scale(1);
+   
+	
+    
+}
+
+.picture1{
+    -webkit-transform: scale(1);
 	-moz-transform: scale(1);
 	-ms-transform: scale(1);
 	-o-transform: scale(1);
@@ -161,9 +187,22 @@ nav ul li a {
 	-ms-transition: all 1.2s linear;
 	-o-transition: all 1.2s linear;
 	transition: all 1.2s linear;
-    
+
 }
 
+.picture2{
+    -webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	/* VERZÖGERUNG */
+	-webkit-transition: all 1.2s linear;
+	-moz-transition: all 1.2s linear;
+	-ms-transition: all 1.2s linear;
+	-o-transition: all 1.2s linear;
+	transition: all 1.2s linear;
+}
 
 
  .videowindow {
@@ -181,9 +220,10 @@ nav ul li a {
 
 h3{
     color: #287228;
-    font-size: 40px;
+    font-size: 50px;
     text-align: left;
     margin-left: 3%;
+    max-width: 40%;
 }
 
 .sammeln {
