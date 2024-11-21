@@ -14,13 +14,10 @@ body {
 
 }
 
-
-
 header {
     background-color: #ffffff00;
     color: rgb(0, 0, 0);
     padding: 0;
-    
 }
 
 header .container {
@@ -29,9 +26,6 @@ header .container {
     align-items: center;
     padding: 0 20px;
 }
-
-
-
   
 ul li a{
     display: block;
@@ -45,7 +39,6 @@ ul li a{
 ul:hover li a{
     transform:scale(1.0);
 }
-  
   
   
 ul li a:before{
@@ -94,7 +87,6 @@ nav ul li a {
     margin: 5px;
 }
 
-
 .login-btn{
     background-color: rgb(18, 105, 41);
     color: #ffffff;
@@ -111,20 +103,20 @@ nav ul li a {
     border: none;
 }
 
-/* Hero-Bereich */
 
+
+
+/* Hero-Bereich */
 
 .hero {
     background-color: #ffffff00;
-    height: 750px;
-    
+    height: 750px; 
 }
 
 .hero h2{
     padding-top: 3%;
     color: #18701b;
-    font-size:calc(36px + (50 - 16) * ((100vw - 320px) / (1600 - 320)));
-    
+    font-size:calc(36px + (50 - 16) * ((100vw - 320px) / (1600 - 320))); 
 }
 
 
@@ -134,18 +126,56 @@ nav ul li a {
     justify-content: space-between;
     margin-left: 10%;
     margin-right: 10%;
-    
 }
 
 .schrift1{
     color: #000000;
     font-size: calc(16px + (27 - 16) * ((100vw - 320px) / (1600 - 320)));
-    
     margin-right: 15%;
     margin-top:5%;
     max-width: 35%;
-
+    transform: scale(1);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
+
+span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+
+@keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+  }
+  
+  span:nth-child(1) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(2) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(3) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+}
+
 
 .picture1:hover{
     -webkit-transform: scale(1.1);
@@ -171,8 +201,6 @@ nav ul li a {
     margin-left:10%;
     height: auto;
     margin-right: 8%;
-   
-	
     
 }
 
@@ -206,10 +234,21 @@ nav ul li a {
 }
 
 
+
+
+
+
+
+/* Video Sektion */
+
  .videowindow {
     max-width: 50%;
     height: auto;
  }
+
+
+
+
    /* Punkte Sektion */
 
 
