@@ -122,6 +122,7 @@ nav ul li a {
     padding-top: 3%;
     color: #18701b;
     font-size:calc(36px + (50 - 16) * ((100vw - 320px) / (1600 - 320))); 
+    
 }
 
 
@@ -131,6 +132,7 @@ nav ul li a {
     justify-content: space-between;
     margin-left: 10%;
     margin-right: 10%;
+    
 }
 
 .schrift1{
@@ -141,6 +143,8 @@ nav ul li a {
     max-width: 35%;
     transform: scale(1);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    
+    
 }
 
 .register{
@@ -149,6 +153,7 @@ nav ul li a {
     border: none;
     color: white;
     padding: 0.8em;
+    box-shadow: 10px 10px 5px rgb(131, 167, 135);
 }
 
 .register:hover{
@@ -157,6 +162,7 @@ nav ul li a {
     border: none;
     color: #ffffff;
     padding: 0.8em;
+    box-shadow: 10px 10px 5px rgb(151, 153, 151);
 }
 
 span {
