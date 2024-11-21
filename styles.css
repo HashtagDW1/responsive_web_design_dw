@@ -15,9 +15,12 @@ body {
 }
 
 header {
-    background-color: #ffffff00;
+    background-color: #ffffff;
     color: rgb(0, 0, 0);
     padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 header .container {
@@ -98,7 +101,8 @@ nav ul li a {
 
 .login-btn:hover{
     
-    border-color: #7a7a7a;
+    border-color: #8c8b8b;
+    color: #908f8f;
     padding: 0.7 2em;
     border-radius: 15px;
     
@@ -295,7 +299,7 @@ h3{
     
 }
 .sammeln:hover {
-    background-color: #414241;
+    background-color: #7b7c7b;
     color: white;
     border-radius: 15px;
     border: none;
@@ -316,8 +320,8 @@ h3{
 }
 .einlösen:hover {
     background-color: #ffffff;
-    color: rgb(78, 78, 78);
-    border-color: #484a48;
+    color: rgb(128, 127, 127);
+    border-color: #7f817f;
     border-radius: 15px;
     padding: 8px 80px;
     margin: 5px;
