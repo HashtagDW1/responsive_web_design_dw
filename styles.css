@@ -41,16 +41,15 @@ body {
         font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (900 - 320)));
     }
 
-    .points-section h3 {
-        font-size: 24px;
-        max-width: 90%;
-        margin: 0 auto;
-    }
+    
 
-    .sammeln, .einlösen {
-        padding: 10px 40px;
-        width: 80%;
-        margin: 10px auto;
+    
+
+    .counter{
+
+    display: flex;
+    justify-content: center;
+
     }
 
     
@@ -60,18 +59,11 @@ body {
     }
 
     .product-list {
-        flex-direction: column;
+        
         gap: 10px;
     }
 
-    .newsletter form input {
-        width: 90%;
-        margin: 10px auto;
-    }
 
-    .newsletter form button {
-        width: 90%;
-    }
 
     .mission {
         padding: 20px;
@@ -107,12 +99,7 @@ body {
        
     }
 
-    .counter{
-        display: flex;
-        max-width: 60%;
-        
-        
-    }
+    
     
     .points-section{
         max-height: 600px;
@@ -151,6 +138,7 @@ body {
         margin-left: -40%;
     }
 
+    
 
     .hero h2 {
         font-size: 34px; /* Kleinere Schriftgröße für kleinere Bildschirme */
@@ -170,7 +158,10 @@ body {
     }
 
     
-
+    .points-section{
+      max-height: 400px;
+      margin-top: -20%;
+    }
 
 
     .product-item {
@@ -191,9 +182,26 @@ body {
 
     
     .counter span{
+        font-size: 50px;
 
-        
     }
+
+    .product-list{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .newsletter form button {
+        display: flex;
+        background-color: #227324;
+        color: white;
+        max-width: 18%;
+        margin-left: 40%;
+        margin-top: 2%;
+    }
+   
     
     
     
@@ -335,10 +343,10 @@ nav ul li a {
 
 
 .box1{
-position: absolute;
+    position: absolute;
     margin-top: 5%;
     margin-left: 10%;
-   z-index: 1;
+    z-index: 1;
 
     
 }
@@ -444,7 +452,7 @@ span {
 
     
     z-index: 1;
-    margin-left: 45%;
+    padding-left: 40%;
     -webkit-transform: scale(1);
 	-moz-transform: scale(1);
 	-ms-transform: scale(1);
@@ -483,7 +491,7 @@ span {
 .points-section{
     
     height: 800px;
-    margin-top: 15%;
+    padding-top: 10%;
     background: linear-gradient( to top, #000 10%, #ffffff 50%);
 
     
@@ -502,7 +510,7 @@ h3{
 
     display: flex;
     justify-content: center;
-    margin-top: 25%;
+    margin-top: 5%;
     
     
 }
@@ -556,13 +564,8 @@ h3{
 
 .counter{
     display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    margin-top: 65%;
+    justify-content: center;
     
-
 }
 
 
