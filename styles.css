@@ -5,6 +5,7 @@ body {
     padding: 0;
     color: #000000;
     background-color: #ffffff;
+   
 }
 
 /* Header */
@@ -14,8 +15,6 @@ body {
         flex-direction: column;
         align-items: flex-start;
     }
-
-   
 
     nav ul li {
         margin-right: 0;
@@ -28,8 +27,6 @@ body {
         
     }
 
-
-    
     .picture2 {
     
       width: 70%; /* Bild skalieren */
@@ -41,9 +38,6 @@ body {
         font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (900 - 320)));
     }
 
-    
-
-    
 
     .counter{
 
@@ -138,7 +132,6 @@ body {
         margin-left: -40%;
     }
 
-    
 
     .hero h2 {
         font-size: 34px; /* Kleinere Schriftgröße für kleinere Bildschirme */
@@ -148,14 +141,33 @@ body {
         display: flex;
         align-items: center;
     }
-
-   
-    
     
     .picture2 {
-        width: 70%; /* Bilder an die Bildschirmbreite anpassen */
+        width: 90%; /* Bilder an die Bildschirmbreite anpassen */
         margin-bottom: 10px;
     }
+   
+    .register{
+        margin-top: 20%;
+        font-size: 15px;
+        background-color: #144317;
+        border-radius: 20px;
+        border:  none;
+        color: white;
+        padding: 0.8em 6em;
+        /*box-shadow: 10px 10px 5px rgb(131, 167, 135);*/
+    }
+    
+    .register:hover{
+    
+        background-color: #676767;
+        border-radius: 20px;
+        border: none;
+        color: #ffffff;
+        padding: 0.8em 6em;
+        /*box-shadow: 10px 10px 5px rgb(151, 153, 151);*/
+    }  
+    
 
     
     .points-section{
@@ -446,6 +458,7 @@ span {
 
     padding-left: 40%;
     
+    
 }
 
 
@@ -710,7 +723,7 @@ h3{
         color: #4e4a67;
         margin: 0 20px 30px auto;
         line-height: 1.5em;
-        text-align: justify;
+        text-align: center;
 
       }
       
@@ -833,13 +846,14 @@ h3{
     border-radius: 15px;
     margin-right: 5px;
     width: 200px;
+    border-style: none;
 }
 
 .newsletter form button {
     background-color: #227324;
     color: white;
     padding: 10px 20px;
-    border-style:none;
+   border-style: none;
     border-radius: 15px;
     cursor: pointer;
 
@@ -848,7 +862,7 @@ h3{
     background-color: #626262;
     color: white;
     padding: 10px 20px;
-    border-style:none;
+   
     border-radius: 15px;
     cursor: pointer;
 
