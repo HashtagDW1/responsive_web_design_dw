@@ -305,9 +305,16 @@ nav ul li a {
 }
 
 .Merkliste{
-    border-radius: 20px;
-    border: none;
     
+    border-radius: 15px;
+    border: none;
+    padding: 0.7em 2em; 
+    background-color: #ffffff00;
+    
+}
+.Merkliste:hover{
+    
+   transform: scale(1.5);
     
 }
 
@@ -337,7 +344,7 @@ nav ul li a {
 .hero {
     max-width:100%;
     max-height: 100%;
-    background: linear-gradient(20deg, #ffffff 40%, #326235); /* Rot zu Blau */
+    
     height: 100vh; /* Damit der gesamte Bildschirm gefüllt ist */
     margin: 0; /* Entfernt den Standardabstand */
     background-image: url(Bilder/Hintergrundbild.jpg);
@@ -440,10 +447,7 @@ span {
 
 
 
-.picture2:hover{
-    
 
-}
 
 .hero-images {
     margin-top: 8%;
@@ -457,6 +461,14 @@ span {
 .picture2{
 
     padding-left: 40%;
+    transform: scale(1);
+    
+    
+}
+.picture2:hover{
+
+    padding-left: 40%;
+    
     
     
 }
@@ -629,20 +641,26 @@ h3{
 /* Mission-Bereich */
 .mission {
     text-align: center;
-    height: 500px;
+    height: 700px;
+    max-width: 100%;
     margin-top: 5%;
     justify-content: center;
     display: flex;
+    background-image: url(Bilder/) ;
+
+    
     
     .card {
         position: absolute;
-        height: 350px;
+        height: 550px;
         width: 100%;
-        max-width: 850px;
+    
         margin-top:140px;
-        background-color: #ffffff;
+        
+        background-color: #ffffff00;
         border-radius: 25px;
-        box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);
+        /*box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);*/
+        
       }
       
       .card .inner_part {
@@ -650,7 +668,7 @@ h3{
         align-items: center;
         justify-content: center;
         padding: 0 0 0 30px;
-        height: 350px;
+        height: 550px;
         position: absolute;
       }
       
@@ -660,12 +678,13 @@ h3{
       }
       
       .inner_part .img {
-        height: 260px;
-        width: 260px;
+        
+        height: 400px;
+        width: 400px;
         overflow: hidden;
         flex-shrink: 0;
         border-radius: 20px;
-        box-shadow: 0 10px 50px rgba(0,0,0,0.2);
+       /* box-shadow: 0 10px 50px rgba(0,0,0,0.2);*/
       }
       
       #slideImg:checked ~ .inner_part .img {
@@ -691,9 +710,9 @@ h3{
       }
       
       .content {
-        padding: 0 20px 0 35px;
-        width: 530px;
-        margin-left: 50px;
+        
+        max-width: 40%;
+        padding-left: 10%;
         opacity: 0;
         transition: .6s; 
       }
@@ -747,9 +766,10 @@ h3{
       }
       
       .slider {
+       
         position: absolute;
-        bottom: 25px;
-        left: 55%;
+        margin-top: 450px;
+        margin-left: 70%;
         transform: translateX(-50%);
         z-index: 1;
       }
