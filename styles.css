@@ -132,9 +132,13 @@ body {
 
 @media (max-width: 600px) {
 
+    .mission{
+        background-color: #eef1ee;
+    }
+
     .nav ul li{
         display: none;
-        
+
     }
    
 
@@ -182,7 +186,12 @@ body {
         
         flex-wrap: wrap; 
         margin-left: -2%;
+        margin-top: 0;
         
+    }
+
+    .content{
+        margin-top: -18%;
     }
 
     
@@ -202,13 +211,16 @@ body {
     #slide_3:checked ~ .inner_part .img_3 {
         opacity: 1;
         transition-delay: .2s;
-        
+        width: 70%;
+        height: 70%;
+       
     }
     
     
     
     #slideImg:checked ~ .inner_part .content {
         display: none;
+        
         
     }
     
@@ -222,13 +234,15 @@ body {
         padding-left: 0;
         padding-right: 25%;
         
+        
     }
     
     
     .title{
-      padding-top: 20%;
+      
       padding-left: 50%;
       padding-right: 0%;
+      
       
 
     }
@@ -242,7 +256,7 @@ body {
 
     .content .text {
         
-        padding-top: 10%;
+        padding-top: 0%;
         width: 160%;
         font-size: 19px;
         color: #000000;
@@ -319,8 +333,8 @@ body {
 
     
     .points-section{
-      max-height: 400px;
-      margin-top: 60%;
+      
+      margin-top: 20%;
     }
 
 
@@ -384,7 +398,7 @@ body {
 
     .slider{
         display: flex;
-        padding-top: 60%;
+        padding-top: 30%;
         padding-right: 70%;
         
     }
@@ -681,16 +695,7 @@ span {
 
 
 
-/* Video Sektion */
 
- .videowindow {
-    max-width: 100%;
-    display: grid;
-    place-items: center;
-    justify-content: center;
-    
-    background-color: #000;
-}
 
 
 
@@ -722,6 +727,7 @@ h3{
     margin-top: 5%;
     
     
+    
 }
 
 .sammeln {
@@ -732,7 +738,8 @@ h3{
     border-radius: 20px;
     border: none;
     padding: 10px 40px;
-    margin: 1%;
+    margin-right: 10px;;
+    
     
     
    
@@ -744,7 +751,7 @@ h3{
     border-radius: 20px;
     border: none;
     padding: 10px 40px;
-    margin: 1%;
+   
     
 }
 
@@ -754,9 +761,9 @@ h3{
     color: rgb(40, 59, 42);
     border-color: #233f24;
     border-radius: 20px;
-    padding: 8px 40px;
+    padding: 10px 40px;
     border-style: double;
-    margin: 1%;
+   
 
 }
 .einlösen:hover {
@@ -764,8 +771,8 @@ h3{
     color: rgb(128, 127, 127);
     border-color: #7f817f;
     border-radius: 20px;
-    padding: 8px 40px;
-    margin: 1%;
+    padding: 10px 40px;
+    
 
     
     
@@ -862,7 +869,7 @@ h3{
 /* Mission-Bereich */
 .mission {
     text-align: center;
-    height: 700px;
+    height: 900px;
     max-width: 100%;
     
     justify-content: center;
@@ -881,7 +888,7 @@ h3{
         
         background-color: #ffffff00;
         border-radius: 25px;
-        /*box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);*/
+        
         
       }
       
@@ -901,9 +908,8 @@ h3{
         height: 400px;
         width: 400px;
         overflow: hidden;
-       
         border-radius: 20px;
-       /* box-shadow: 0 10px 50px rgba(0,0,0,0.2);*/
+       
       }
       
      
@@ -947,13 +953,13 @@ h3{
       .content .title {
         font-size: 30px;
         font-weight: 700;
-        color: #0d0925;
+        color: #000000;
         margin: 0 0 20px 0;
       }
       
       .content .text {
         font-size: 19px;
-        color: #4e4a67;
+        color: #000000;
         margin: 0 20px 30px auto;
         line-height: 1.5em;
         text-align: center;
