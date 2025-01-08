@@ -108,6 +108,10 @@ body {
     max-width: calc(50% - 20px);
    }
 
+   .slider{
+    padding: 0% ;
+   }
+
 }
 
 
@@ -120,32 +124,13 @@ body {
         background-size: 160%;
     }
 
-    .mission {
-       
-        display:flex;
-        flex-direction: column;
-        
-        
-    }
     
-    /* .card anpassen */
-    .card {
-        position: absolute;
-        height: 300px;
-        width: 100%;
-        margin-top: 140px;
-        background-color: #ffffff00;
-        border-radius: 25px;
-    }
     
     /* .inner_part anpassen */
     .inner_part {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0 0 0 30px;
-        height: 550px;
-        position: absolute;
+        
+        flex-wrap: wrap; 
+        
     }
     
     /* Auf das Bild reagieren */
@@ -154,29 +139,7 @@ body {
         transition: .1s ease-in;
     }
     
-    .inner_part .img {
-        height: 200px;
-        width: 200px;
-        overflow: hidden;
-        flex-shrink: 0;
-        border-radius: 20px;
-    }
-    
-    #slideImg:checked ~ .inner_part .img {
-        height: 350px;
-        width: 850px;
-        z-index: 99;
-        transition: .3s .2s ease-in;
-    }
-    
-    .img img {
-        height: 80%;
-        width: 80%;
-        cursor: pointer;
-        opacity: 0;
-        transition: .6s;
-    }
-    
+   
     #slide_1:checked ~ .inner_part .img_1,
     #slide_2:checked ~ .inner_part .img_2,
     #slide_3:checked ~ .inner_part .img_3 {
@@ -184,12 +147,7 @@ body {
         transition-delay: .2s;
     }
     
-    .content {
-        max-width: 40%;
-        padding-left: 10%;
-        opacity: 0;
-        transition: .6s;
-    }
+    
     
     #slideImg:checked ~ .inner_part .content {
         display: none;
@@ -198,89 +156,25 @@ body {
     #slide_1:checked ~ .inner_part .content_1,
     #slide_2:checked ~ .inner_part .content_2,
     #slide_3:checked ~ .inner_part .content_3 {
-        opacity: 1;
+        opacity: 0;
         margin-left: 0;
-        z-index: 100;
+        z-index: 99;
         transition-delay: .3s;
     }
     
-    .content .title {
-        font-size: 30px;
-        font-weight: 700;
-        color: #0d0925;
-        margin: 0 0 20px 0;
-    }
+    
     
     .content .text {
+        
+        text-align: center;
+        width: 160%;
         font-size: 19px;
-        color: #4e4a67;
-        margin: 0 20px 30px auto;
+        color: #000000;
         line-height: 1.5em;
         text-align: center;
     }
     
-    .content button {
-        padding: 15px 20px;
-        border: none;
-        font-size: 16px;
-        color: #fff0e6;
-        font-weight: 600;
-        letter-spacing: 1px;
-        border-radius: 50px;
-        cursor: pointer;
-        outline: none;
-        background: #144317;
-    }
-    
-    .content button:hover {
-        background: #cecece;
-        color: #000000;
-    }
-    
-    /* Slider */
-    .slider {
-        position: absolute;
-        margin-top: 450px;
-        margin-left: 70%;
-        transform: translateX(-50%);
-        z-index: 1;
-    }
-    
-    #slideImg:checked ~ .slider {
-        display: none;
-    }
-    
-    .slider .slide {
-        position: relative;
-        height: 10px;
-        width: 50px;
-        background: #d9d9d9;
-        border-radius: 5px;
-        display: inline-flex;
-        margin: 0 3px;
-        cursor: pointer;
-    }
-    
-    .slider .slide:before {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: -100%;
-        background: #000000;
-        border-radius: 10px;
-        transform: scaleX(0);
-        transition: transform .6s;
-        transform-origin: left;
-    }
-    
-    #slide_1:checked ~ .slider .slide_1:before,
-    #slide_2:checked ~ .slider .slide_2:before,
-    #slide_3:checked ~ .slider .slide_3:before {
-        transform: scaleX(1);
-        width: 100%;
-    }
+  
     
     
         
@@ -290,6 +184,7 @@ body {
 
     nav ul {
         flex-direction: column;
+        
         
         
     }
@@ -339,7 +234,7 @@ body {
     
     .points-section{
       max-height: 400px;
-      margin-top: 20%;
+      margin-top: 60%;
     }
 
 
