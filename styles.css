@@ -133,6 +133,7 @@ body {
 @media (max-width: 600px) {
 
     .box1{
+        
         font-size: small;
     }
 
@@ -1173,3 +1174,117 @@ footer a {
     width: auto;
 
 }
+
+.overlapping-section {
+    width: 100%;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .overlapping-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 10%;
+  }
+  
+  .content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+  }
+  
+  .images2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Abstand zwischen den Bildern */
+    width: 100%;
+    margin-bottom: 10%;
+  }
+  
+  .images2 img {
+    width: 48%; /* Beide Bilder zusammen nehmen ~100% der Breite mit etwas Platz */
+    height: auto; /* Proportionale Skalierung */
+    border-radius: 8px; /* Optional: Abgerundete Ecken */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Schatten */
+  }
+  
+  .carousel-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f500;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .carousel-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    animation: rotate 16s infinite;
+  }
+  
+  .carousel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-image:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .carousel-image:nth-child(2) {
+    animation-delay: 4s;
+  }
+  .carousel-image:nth-child(3) {
+    animation-delay: 8s;
+  }
+  .carousel-image:nth-child(4) {
+    animation-delay: 12s;
+  }
+  
+  @keyframes rotate {
+    0% {
+      opacity: 0;
+      transform: scale(1);
+    }
+    10% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    25% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    35% {
+      opacity: 0;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+
+  
+  
