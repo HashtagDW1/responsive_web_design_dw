@@ -109,7 +109,9 @@ body {
    }
 
    .slider{
-    padding: 0% ;
+    display: flex;
+    padding-left: 30.5%;
+    padding-top: 10%;
    }
 
 }
@@ -117,26 +119,50 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 600px) {
 
+    .box1{
+        font-size: small;
+    }
+
     .hero{
+      
         background-image: url(Bilder/Hintergrundbild.jpg );
         background-size: 160%;
     }
 
-    
+    .picture2{
+        max-width: 70%;
+    }
     
     /* .inner_part anpassen */
     .inner_part {
         
         flex-wrap: wrap; 
+        margin-left: -2%;
         
     }
+
+
+      
     
     /* Auf das Bild reagieren */
     #slideImg:checked ~ .inner_part {
-        padding: 0;
+        
         transition: .1s ease-in;
+        
+        
     }
     
    
@@ -145,12 +171,14 @@ body {
     #slide_3:checked ~ .inner_part .img_3 {
         opacity: 1;
         transition-delay: .2s;
+        
     }
     
     
     
     #slideImg:checked ~ .inner_part .content {
         display: none;
+        
     }
     
     #slide_1:checked ~ .inner_part .content_1,
@@ -160,25 +188,52 @@ body {
         margin-left: 0;
         z-index: 99;
         transition-delay: .3s;
+        padding-left: 0;
+        padding-right: 25%;
+        
     }
     
     
+    .title{
+      padding-top: 20%;
+      padding-left: 50%;
+      padding-right: 0%;
+      
+
+    }
+
+    .buttonzentrieren{
+        margin-left: 50%;
+
+    }
+
     
+
     .content .text {
         
-        text-align: center;
+        padding-top: 10%;
         width: 160%;
         font-size: 19px;
         color: #000000;
         line-height: 1.5em;
-        text-align: center;
+        
     }
+    
     
   
     
     
-        
+    .product-item{
+
+        margin-left:  -25%;
+
+
+    }
     
+    p.beschreibung{
+
+      padding-left: 90px;
+    }
        
     
 
@@ -296,9 +351,58 @@ body {
         margin: 5px 0;
     }
 
-   
+    .slider{
+        display: flex;
+        padding-top: 60%;
+        padding-right: 70%;
+        
+    }
+    
+    
+
+
+    .services {
+        
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        
+    }
+
+    .service-card {
+        
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin: -3%;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .h1{
     font-family:monospace;
@@ -531,15 +635,15 @@ span {
  
 
 .picture2{
-
+    max-width: 100%;
     padding-left: 40%;
-    transform: scale(1);
+    
     
     
 }
 .picture2:hover{
 
-    padding-left: 40%;
+   
     
     
     
@@ -569,9 +673,9 @@ span {
 
 .points-section{
     
-    height: 800px;
+    height: 600px;
     padding-top: 10%;
-    background: linear-gradient( to top, #000 10%, #ffffff 50%);
+    background: linear-gradient( to top, #405d42 10%, #ffffff 50%);
 
     
     
@@ -596,7 +700,7 @@ h3{
 
 .sammeln {
     
-    background-color: #146617;
+    background-color: #224323;
     font-size: 15px;
     color: white;
     border-radius: 20px;
@@ -621,8 +725,8 @@ h3{
 .einlösen{
     background-color: #ffffff;
     font-size: 15px;
-    color: rgb(26, 100, 35);
-    border-color: #146617;
+    color: rgb(40, 59, 42);
+    border-color: #233f24;
     border-radius: 20px;
     padding: 8px 40px;
     border-style: double;
@@ -771,7 +875,7 @@ h3{
         height: 400px;
         width: 400px;
         overflow: hidden;
-        flex-shrink: 0;
+       
         border-radius: 20px;
        /* box-shadow: 0 10px 50px rgba(0,0,0,0.2);*/
       }
@@ -834,9 +938,7 @@ h3{
         padding: 15px 20px;
         border: none;
         font-size: 16px;
-        color: #fff0e6;
-        font-weight: 600;
-        letter-spacing: 1px;
+        color: #fefefe;
         border-radius: 50px;
         cursor: pointer;
         outline: none;
@@ -845,8 +947,8 @@ h3{
       }
       
       .content button:hover {
-        background: #cecece;
-        color: #000000;
+        background: #575757;
+        color: #ffffff;
       }
       
       .slider {
@@ -940,6 +1042,7 @@ h3{
     margin-top: 30px;
     color: #1e6b21;
     text-decoration: underline;
+    margin-bottom: 5%;
 }
 
 
@@ -961,10 +1064,10 @@ h3{
 }
 
 .newsletter form button {
-    background-color: #227324;
+    background-color: #304b30;
     color: white;
     padding: 10px 20px;
-   border-style: none;
+    border-style: none;
     border-radius: 15px;
     cursor: pointer;
 
@@ -973,7 +1076,6 @@ h3{
     background-color: #626262;
     color: white;
     padding: 10px 20px;
-   
     border-radius: 15px;
     cursor: pointer;
 
@@ -994,3 +1096,80 @@ footer a {
     text-decoration: none;
 }
 
+
+
+
+
+
+.services {
+    
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px;
+    background: url(Bilder/Hintergrundbild.jpg);
+}
+
+.service-card {
+    margin-top: 10%;
+    background: #619164;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+.service-card img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #000000;
+    
+}
+
+.service-card p {
+    font-size: 0.9em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.herstellung{
+    margin-top: 10%;
+
+}
+
+.herstellungsection{
+   padding-left: 38%;
+}
+
+.recyclingbild{
+    opacity: 0.7;
+}
+
+.shredding{
+    opacity: 0.7;
+    max-width: 18%;
+    max-height: auto;
+}
+
+.sorting{
+    opacity: 0.7;
+    height: 50px;
+    width: auto;
+
+}
