@@ -137,7 +137,10 @@ body {
 @media (max-width: 600px) {
 
 
-    
+    .text-container {
+        margin-left: 25%;
+        margin-top: 10%;
+    }
 
     /* Navigation Menü */
     nav {
@@ -240,6 +243,7 @@ nav ul li a:hover {
     .text-container {
         flex: 1 1 100%; /* Nimmt die gesamte Breite ein */
     }
+    
 
     .product-container {
         display: flex;
@@ -1543,7 +1547,7 @@ footer a {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    min-height: 80vh; /* Höhe der Sektion: Bildschirmhöhe */
+    min-height: 90vh; /* Höhe der Sektion: Bildschirmhöhe */
     margin-top: -10%;
 }
 
@@ -1569,6 +1573,7 @@ footer a {
 .text-container {
     background-color: #ffffff; /* Optionaler Hintergrund */
     text-align: center;
+    max-width: 50%;
 }
 
 .text-container h2 {
@@ -1578,7 +1583,7 @@ footer a {
 }
 
 .text-container p {
-    font-size: 18px;
+    font-size: 19px;
     
 }
 
