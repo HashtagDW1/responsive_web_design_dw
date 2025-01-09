@@ -137,15 +137,10 @@ body {
 @media (max-width: 600px) {
 
 
-    .product-details{
-        
-    }
-    .description{
-        
-    }
+    
 
     /* Navigation Menü */
-nav {
+    nav {
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -1507,18 +1502,19 @@ footer a {
 }
 
 .product-details h2 {
-    font-size: 28px;
+    font-size:calc(14px + (20 - 14) * ((100vw - 320px) / (900 - 320)));
     margin-bottom: 10px;
 }
 
 .price {
-    font-size: 24px;
+    font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (900 - 320)));
     color: #397044;
     margin-bottom: 10px;
     text-decoration: line-through; color: #000000;
 }
 
 .description {
+    font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (900 - 320)));
     margin-bottom: 20px;
 }
 
@@ -1539,7 +1535,8 @@ footer a {
 
 .price2{
     color: #1d701d;
-    font-size: xx-large;
+    font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (900 - 320)));
+    
 }
 
 .text-image-section {
