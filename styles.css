@@ -136,7 +136,16 @@ body {
 
 @media (max-width: 600px) {
 
-   
+    .box1{
+        display: flex;
+        flex-direction:row;
+        top: 70%;
+    }
+
+    ul li {
+        display: none;
+    
+    }
     
     .text-image-section {
         flex-direction: column; /* Elemente untereinander anordnen */
@@ -169,43 +178,40 @@ body {
    
 
     .carousel2 {
-      
-        bottom: 10%;
-        left: 20%;
-        position: relative;
-        width: 60%;
-        height: 70%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-      }
+       position: relative;
+        bottom: 20%;
+        padding-right: 33%;
+    
+    }
 
     .images2 {
         display: flex;
-        flex-direction: column;  
-
+        
     }
       
-    .images2.images2{
-        width: 600px;
+    .schrift1 {
+        margin-top: 43%;
+        position: relative;
+        left: -72%;
     }
-
+    .schrift1 span{
+      display: none;
+    }
 
     .box1{
+      top: 60%;
         
-        font-size: small;
     }
+    
 
     .hero{
       
         background-image: url(Bilder/Hintergrundbild.jpg );
-        background-size: 160%;
+        background-size: 290%;
+        max-width: 100%;
     }
 
-    .picture2{
-        max-width: 70%;
-    }
+    
     
     /* .inner_part anpassen */
     .inner_part {
@@ -316,16 +322,7 @@ body {
         
     }
 
-    .schrift1{
-        
-        margin-left: -40%;
-    }
-
-
-    .hero h2 {
-        font-size: 34px; /* Kleinere Schriftgröße für kleinere Bildschirme */
-    }
-
+    
     .hero-images {
         display: flex;
         align-items: center;
@@ -374,7 +371,7 @@ body {
         font-size: 20px;
     }
 
-    .hero h2, h4 {
+    .hero h4 {
         font-size: 18px;
     }
 
@@ -602,7 +599,7 @@ nav ul li a {
 
 .hero h2{
     color: #144317;
-    font-size:calc(16px + (60 - 16) * ((100vw - 320px) / (1600 - 320))); 
+    font-size: 7vh;
     
     
 }
@@ -1506,4 +1503,10 @@ footer a {
 
 .text-container p strong{
     font-size: 18px;
+}
+
+.zentrieren{
+    text-align: center;
+    margin-top: 12%;
+    margin-bottom: -20%;
 }
