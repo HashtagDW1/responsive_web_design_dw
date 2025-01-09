@@ -136,6 +136,17 @@ body {
 
 @media (max-width: 600px) {
 
+   
+    
+    .text-image-section {
+        flex-direction: column; /* Elemente untereinander anordnen */
+    }
+
+    .image-container,
+    .text-container {
+        flex: 1 1 100%; /* Nimmt die gesamte Breite ein */
+    }
+
     .product-container {
         display: flex;
         gap: 20px;
@@ -722,7 +733,7 @@ span {
     
     height: 600px;
     padding-top: 10%;
-    background: linear-gradient( to top, #405d42 10%, #ffffff 50%);
+    background: 
 
     
     
@@ -1448,4 +1459,51 @@ footer a {
 .price2{
     color: #1d701d;
     font-size: xx-large;
+}
+
+.text-image-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 80vh; /* Höhe der Sektion: Bildschirmhöhe */
+    margin-top: -10%;
+}
+
+.image-container,
+.text-container {
+    flex: 1 1 50%; /* Flexibel, nimmt jeweils 50% ein */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+/* Bild-Stil */
+.image-container img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Text-Stil */
+.text-container {
+    background-color: #ffffff; /* Optionaler Hintergrund */
+    text-align: center;
+}
+
+.text-container h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+   
+}
+
+.text-container p {
+    font-size: 18px;
+    
+}
+
+.text-container p strong{
+    font-size: 18px;
 }
