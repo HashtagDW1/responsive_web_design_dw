@@ -136,6 +136,14 @@ body {
 
 @media (max-width: 600px) {
 
+
+    .product-details{
+        
+    }
+    .description{
+        
+    }
+
     /* Navigation Menü */
 nav {
     position: fixed;
