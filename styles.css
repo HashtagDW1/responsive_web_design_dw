@@ -1533,32 +1533,35 @@ footer a {
   
   @media screen and (max-width: 410px) {
     /* Mobile Ansicht aktivieren */
-  .text-image-section3 {
-    display: flex;
-    flex-direction: row;
-    overflow: hidden; /* Kein Scrollbar anzeigen */
-    gap: 20px;
-    cursor: grab;
-  }
-
-  .text-container3, .image-container3 {
-    flex: 0 0 100%; /* 100% Breite für jedes Element */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-
-  .text-container3 {
-    background-color: #f9f9f9;
-  }
-
-  .image-container3 img {
-    max-width: 100%;
-    height: auto;
-  }
+    .text-image-section3 {
+      display: flex;
+      max-height: 100%;
+      flex-direction: row;
+      overflow-x: auto; /* Horizontal scrollbar für Swiping */
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+  
+    .text-container3, .image-container3 {
+      flex: 0 0 100%; /* 100% Breite für jedes Element */
+      scroll-snap-align: start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+  
+    .text-container3 {
+      background-color: #dfdddd;
+    }
+  
+    .image-container3 img {
+      max-width: 100%;
+      height: auto;
+      
+    }
   }
   
   
