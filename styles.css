@@ -335,7 +335,7 @@ nav ul li a:hover {
 
     }
 
-    .h1{
+    .h1:link{
         margin-top: 10%;
         color: #000000;
     }
