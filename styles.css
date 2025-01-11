@@ -362,13 +362,6 @@ nav ul li a:hover {
     }
     
     
-    
-    #slideImg:checked ~ .inner_part .content {
-        http://127.0.0.1:3000/index.html
-        
-        
-    }
-    
     #slide_1:checked ~ .inner_part .content_1,
     #slide_2:checked ~ .inner_part .content_2,
     #slide_3:checked ~ .inner_part .content_3 {
@@ -379,20 +372,6 @@ nav ul li a:hover {
         padding-left: 0;
         
         
-        
-    }
-    
-    
-    
-
-    .content .text {
-        
-    
-        max-width: 100%;
-        
-        color: #000000;
-        line-height: 1.5em;
-        
     }
     
     
@@ -400,15 +379,14 @@ nav ul li a:hover {
     
     
     .product-item{
-
-        margin-left:  -25%;
+      
+      justify-content: center;
 
 
     }
     
     p.beschreibung{
-
-      padding-left: 90px;
+      text-align: center;
     }
        
    
@@ -510,14 +488,21 @@ nav ul li a:hover {
 
     
     
-   
-    
-    
-    
-    
+    .product-item {
+        flex: 1 1 100%; /* Volle Breite */
+        max-width: 100%; /* Volle Breite */
+    }
+
+    .product-item img {
+        width: 100%; /* Bild passt sich an die Breite an */
+        height: auto; /* Proportionales Seitenverhältnis */
+    }
     
 
-    
+    .product-item img {
+        width: 100%; /* Bildbreite wird auf die Containerbreite begrenzt */
+        height: auto; /* Verhältnis bleibt korrekt */
+    }
     
 }
 
@@ -804,7 +789,7 @@ span {
 
 h3{
     color: #000000;
-    font-size: calc(8px + (60 - 8) * ((100vw - 320px) / (1600 - 320)));
+    font-size: calc(20px + (60 - 8) * ((100vw - 320px) / (1600 - 320)));
     text-align: center;
     
     
@@ -1145,7 +1130,7 @@ h3{
 .product-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+   
     
 }
 
@@ -1155,8 +1140,8 @@ h3{
 }
 
 .product-item img {
-    width: 400px;
-    height: 300px;
+    width: 100%;
+    height: auto;
 }
 
 .more-products {
