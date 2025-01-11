@@ -35,3 +35,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+const scrollableSection = document.getElementById('scrollable-section');
+const scrollRightBtn = document.getElementById('scroll-right');
+
+scrollRightBtn.addEventListener('click', () => {
+  const scrollAmount = scrollableSection.offsetWidth; // Scroll um eine Container-Breite
+  scrollableSection.scrollBy({
+    left: scrollAmount,
+    behavior: 'smooth'
+  });
+});
