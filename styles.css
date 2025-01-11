@@ -17,7 +17,7 @@ body {
 @media (max-width: 900px) {
 
     
-
+    
     
     header .container {
         flex-direction: column;
@@ -137,7 +137,12 @@ body {
 @media (max-width: 393px) {
 
 
-    
+    .buttoncenter{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+    }
     
     .hero h2{
         color: #144317;
@@ -437,7 +442,7 @@ nav ul li a:hover {
         background-color: #227324;
         color: white;
         max-width: 100%;
-        margin-left:28%;
+        
         margin-top: 2%;
     }
    
@@ -521,7 +526,9 @@ nav ul li a:hover {
 
 
 
-
+.h1:link{
+    color: #000000;
+}
 
 
 .h1{
@@ -684,7 +691,7 @@ nav ul li a {
     margin-top: 20%;
     font-size: 15px;
     background-color: #144317;
-    border-radius: 20px;
+    border-radius: 25px;
     border:  none;
     color: white;
     padding: 15px 50px;
@@ -941,179 +948,103 @@ h3{
 
 
 
-/* Mission-Bereich */
-.mission {
-    text-align: center;
-    height: 900px;
-    max-width: 100%;
-    
-    justify-content: center;
-    display: flex;
-   
-   
-    
-    
-    
-    .card {
-        position: absolute;
-        height: 550px;
-        width: 100%;
-    
-        margin-top:140px;
-        
-        background-color: #ffffff00;
-        border-radius: 25px;
-        
-        
-      }
-      
-      .card .inner_part {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0 0 0 30px;
-        height: 550px;
-        position: absolute;
-      }
-      
-      
-      
-      .inner_part .img {
-        
-        height: 400px;
-        width: 400px;
-        overflow: hidden;
-        border-radius: 20px;
-       
-      }
-      
-     
-      
-      .img img {
-        height: 100%;
-        width: 100%;
-        cursor: pointer;
-        opacity: 0;
-        transition: .6s;
-      }
-      
-      #slide_1:checked ~ .inner_part .img_1,
-      #slide_2:checked ~ .inner_part .img_2,
-      #slide_3:checked ~ .inner_part .img_3 {
-        opacity: 1;
-        transition-delay: .2s;
-      }
-      
-      .content {
-        
-        max-width: 40%;
-        padding-left: 10%;
-        opacity: 0;
-        transition: .6s; 
-      }
-      
-      #slideImg:checked ~ .inner_part .content {
-        display: none;
-      }
-      
-      #slide_1:checked ~ .inner_part .content_1,
-      #slide_2:checked ~ .inner_part .content_2,
-      #slide_3:checked ~ .inner_part .content_3 {
-        opacity: 1;
-        margin-left: 0;
-        z-index: 100;
-        transition-delay: .3s;
-      }
-      
-      .content .title {
-        font-size: 30px;
-        font-weight: 700;
-        color: #000000;
-        margin: 0 0 20px 0;
-      }
-      
-      .content .text {
-        font-size: 19px;
-        color: #000000;
-        margin: 0 20px 30px auto;
-        line-height: 1.5em;
-        text-align: center;
+/* Panels. */
+.splitview {
+    position: relative;
+    width: 100%;
+    min-height: 45vw;
+    overflow: hidden;
+}
 
-      }
-      
-      .content button {
-        padding: 15px 20px;
-        border: none;
-        font-size: 16px;
-        color: #fefefe;
-        border-radius: 50px;
-        cursor: pointer;
-        outline: none;
-        background: #144317;
-        
-      }
-      
-      .content button:hover {
-        background: #575757;
-        color: #ffffff;
-      }
-      
-      .slider {
-       
-        position: absolute;
-        margin-top: 450px;
-        margin-left: 70%;
-        transform: translateX(-50%);
-        z-index: 1;
-      }
-      
-      #slideImg:checked ~ .slider {
-        display: none;
-      }
-      
-      .slider .slide {
-        position: relative;
-        height: 10px;
-        width: 50px;
-        background: #d9d9d9;
-        border-radius: 5px;
-        display: inline-flex;
-        margin: 0 3px;
-        cursor: pointer;
-      }
-      
-      
-      .slider .slide:before {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: -100%;
-        background: #000000;;
-        border-radius: 10px;
-        transform: scaleX(0);
-        transition: transform .6s;
-        transform-origin: left;
-      }
-      
-      #slide_1:checked ~ .slider .slide_1:before,
-      #slide_2:checked ~ .slider .slide_2:before,
-      #slide_3:checked ~ .slider .slide_3:before {
-        transform: scaleX(1);
-        width: 100%;
-      }
-      
-      input {
-        display: none;
-      }
-  
-    
+.panel {
+    position: absolute;
+    width: 100vw;
+    min-height: 45vw;
+    overflow: hidden;
 }
-.mission h4{
-    font-size: 40px;
-    
+
+    .panel .content {
+        position: absolute;
+        width: 100vw;
+        min-height: 45vw;
+        color: #020202;
+    }
+
+    .panel .description {
+        width: 25%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    .panel img {
+        box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15);
+        width: 35%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+.bottom {
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
 }
+
+    .bottom .description {
+        right: 5%;
+    }
+
+.top {
+    background-color: rgb(27, 67, 45);
+    z-index: 2;
+    width: 50vw;
+
+    /*-webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);*/
+}
+
+    .top .description {
+        left: 5%;
+    }
+
+/* Handle. */
+.handle {
+    height: 100%;
+    position: absolute;
+    display: block;
+    background-color: rgb(95, 94, 94);
+    width: 5px;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+}
+
+/* Skewed. */
+.skewed .handle {
+    top: 50%;
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    transform-origin: top;
+}
+
+.skewed .top {
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+}
+
+.skewed .top .content {
+    transform: skew(30deg);
+    margin-left: 1000px;
+}
+
+
+
 
 .products h4{
     font-size: 40px;
