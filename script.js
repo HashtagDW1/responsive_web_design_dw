@@ -34,3 +34,54 @@ document.addEventListener('DOMContentLoaded', function() {
         topPanel.style.width = event.clientX + skewHack + delta + 'px';
     });
 });
+
+const scrollableSection = document.getElementById('scrollable-section');
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+scrollableSection.addEventListener('mousedown', (e) => {
+  isDown = true;
+  scrollableSection.classList.add('active');
+  startX = e.pageX - scrollableSection.offsetLeft;
+  scrollLeft = scrollableSection.scrollLeft;
+});
+
+scrollableSection.addEventListener('mouseleave', () => {
+  isDown = false;
+  scrollableSection.classList.remove('active');
+});
+
+scrollableSection.addEventListener('mouseup', () => {
+  isDown = false;
+  scrollableSection.classList.remove('active');
+});
+
+scrollableSection.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - scrollableSection.offsetLeft;
+  const walk = (x - startX) * 1.5; // Scroll-Geschwindigkeit
+  scrollableSection.scrollLeft = scrollLeft - walk;
+});
+
+// Für Touch-Events auf Mobilgeräten
+scrollableSection.addEventListener('touchstart', (e) => {
+  const touch = e.touches[0];
+  isDown = true;
+  startX = touch.pageX - scrollableSection.offsetLeft;
+  scrollLeft = scrollableSection.scrollLeft;
+});
+
+scrollableSection.addEventListener('touchend', () => {
+  isDown = false;
+});
+
+scrollableSection.addEventListener('touchmove', (e) => {
+  if (!isDown) return;
+  const touch = e.touches[0];
+  const x = touch.pageX - scrollableSection.offsetLeft;
+  const walk = (x - startX) * 1.5;
+  scrollableSection.scrollLeft = scrollLeft - walk;
+});

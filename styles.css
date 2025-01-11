@@ -1181,6 +1181,7 @@ footer a {
 
 
 .overlapping-section {
+    
     height: 100%;
     width: 100%;
     background-color: #eae9e9ba;
@@ -1202,6 +1203,7 @@ footer a {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    
     
   }
   
@@ -1415,6 +1417,7 @@ footer a {
     width: 100%;
     min-height: 90vh; /* Bildschirmhöhe */
     margin-top: 0%;
+    
 }
 
 .image-container,
@@ -1425,6 +1428,8 @@ footer a {
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 /* Bild-Stil */
@@ -1438,7 +1443,8 @@ footer a {
 .text-container {
     background-color: #ffffff;
     text-align: center;
-    max-width: 50%;
+    max-width: 45%;
+    margin-left: 5%;
 }
 
 .text-container h2 {
@@ -1519,3 +1525,41 @@ footer a {
         font-size: 14px; /* Kleinere Schrift für den Text */
     }
 }
+
+
+   .text-image-section3 {
+    display: none; /* Standardmäßig ausblenden (für Desktop) */
+    }
+  
+  @media screen and (max-width: 410px) {
+    /* Mobile Ansicht aktivieren */
+  .text-image-section3 {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden; /* Kein Scrollbar anzeigen */
+    gap: 20px;
+    cursor: grab;
+  }
+
+  .text-container3, .image-container3 {
+    flex: 0 0 100%; /* 100% Breite für jedes Element */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .text-container3 {
+    background-color: #f9f9f9;
+  }
+
+  .image-container3 img {
+    max-width: 100%;
+    height: auto;
+  }
+  }
+  
+  
+  
