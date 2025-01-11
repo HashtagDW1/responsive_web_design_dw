@@ -134,7 +134,7 @@ body {
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 392px) {
 
    
 
@@ -1484,7 +1484,7 @@ footer a {
 }
 
 /* Media Query für mobile Geräte mit max. Breite von 392px */
-@media (max-width: 400px) {
+@media (max-width: 392px) {
     .text-image-section {
         display: none;
     }
