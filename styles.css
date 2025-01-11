@@ -335,7 +335,10 @@ nav ul li a:hover {
 
     }
 
-    
+    .h1{
+        margin-top: 10%;
+        color: #000000;
+    }
       
     
     /* Auf das Bild reagieren */
@@ -542,6 +545,7 @@ nav ul li a:hover {
     margin-left: 3%;
     border-color:#00000000;
     background-color: #00000000;
+
 
 }
 
