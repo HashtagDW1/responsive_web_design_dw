@@ -47,7 +47,7 @@ body {
     }
 
     .counter{
-
+    
      display: flex;
      justify-content: center;
 
@@ -137,7 +137,7 @@ body {
 @media (max-width: 410px) {
 
    
-
+  
 
 
     .login-btn{
@@ -195,7 +195,7 @@ body {
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     transition: left 0.3s;
-}
+    }
 
   nav ul {
     display: flex;
@@ -204,23 +204,23 @@ body {
     padding: 0;
     margin: 0;
     margin-top: 20%;
-}
+   }
 
-nav ul li {
+   nav ul li {
     
     margin: 20px 0;
-}
+   }
 
-nav ul li a {
+  nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s;
-}
+   }
 
-nav ul li a:hover {
+  nav ul li a:hover {
     color: #a9a9a8;
-}
+  }
 
 
    nav.open {
@@ -228,17 +228,17 @@ nav ul li a:hover {
     }
 
     /* Animation für Burger Menü (offen/geschlossen) */
-.burger-menu.active span:nth-child(1) {
+  .burger-menu.active span:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
-}
+   }
 
-.burger-menu.active span:nth-child(2) {
+   .burger-menu.active span:nth-child(2) {
     opacity: 0;
-}
+     }
 
-.burger-menu.active span:nth-child(3) {
+   .burger-menu.active span:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
-}
+   }
 
 
 
@@ -422,7 +422,6 @@ nav ul li a:hover {
 
     .services {
         
-    
         display: flex;
         justify-content: center;
         align-items: center;
@@ -459,27 +458,27 @@ nav ul li a:hover {
         width: 100%; /* Bildbreite wird auf die Containerbreite begrenzt */
         height: auto; /* Verhältnis bleibt korrekt */
     }
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.h1:link{
+    .h1:link{
     color: #000000;
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .h1{
@@ -930,7 +929,7 @@ h3{
     }
 
     .panel img {
-        box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15);
+        
         width: 35%;
         position: absolute;
         top: 50%;
@@ -994,7 +993,9 @@ h3{
     margin-left: 1000px;
 }
 
-
+.ecken{
+    border-radius: 20px;
+}
 
 
 .products h4{
@@ -1026,13 +1027,27 @@ h3{
     height: auto;
 }
 
+
 .more-products {
-    display: block;
-    margin-top: 30px;
-    color: #1e6b21;
-    text-decoration: underline;
-    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+    font-size: 13px;
+    color: #144317; /* Weißer Text */
+    background-color: #ffffff; 
+    border-color: #144317;
+    margin-bottom: 1%;
 }
+
+
+
+.more-products:hover {
+    border-color: #717272; 
+    
+    
+}
+
+
 
 
 .newsletter {
@@ -1099,8 +1114,8 @@ footer a {
     flex-wrap: wrap;
     gap: 30px;
     padding: 50px;
-    background: url(Bilder/Hintergrundbild.jpg);
-    background-size: 120%;
+    background-color: #ffffff;
+    
 }
 
 .service-card {
@@ -1168,7 +1183,7 @@ footer a {
 .overlapping-section {
     height: 100%;
     width: 100%;
-    background-color: #f9f9f9;
+    background-color: #eae9e9ba;
     text-align: center;
   }
   
@@ -1416,7 +1431,7 @@ footer a {
 .image-container img {
     max-width: 80%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 /* Text-Stil */
