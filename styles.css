@@ -1510,6 +1510,7 @@ footer a {
         display: none;
     }
     .mobile-section {
+        
         display: flex; /* Sichtbar und als flexbox angezeigt auf mobilen Geräten */
     }
 
@@ -1539,8 +1540,27 @@ footer a {
         overflow-x: auto;
         gap: 20px;
         position: relative;
+        scroll-snap-type: x mandatory; /* Optional für sanftes Einrasten */
+        -webkit-overflow-scrolling: touch;
       }
     
+      /* Styling für die Scrollbar */
+.text-image-section3::-webkit-scrollbar {
+    height: 8px; /* Höhe der horizontalen Scrollbar */
+  }
+  
+  .text-image-section3::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Hintergrund der Scrollbar-Leiste */
+  }
+  
+  .text-image-section3::-webkit-scrollbar-thumb {
+    background: #888; /* Farbe des Scrollbar-Griffs */
+    border-radius: 4px; /* Runde Ecken für den Griff */
+  }
+  
+  .text-image-section3::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Dunklere Farbe beim Hover */
+  }
       .text-container3, .image-container3 {
         flex: 0 0 100%; /* 100% Breite für jedes Element */
         display: flex;
