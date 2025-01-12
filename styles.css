@@ -137,10 +137,14 @@ body {
 @media (max-width: 410px) {
 
    
-  
+    .Merkliste{
+        display:none;
+        
+    }
 
 
     .login-btn{
+        
         background-color: #144317;
         color: #ffffff;
         border-radius: 15px;
@@ -160,6 +164,8 @@ body {
         font-size: small;
         
     }
+     
+
 
     .mission{
         display: none;
@@ -190,7 +196,7 @@ body {
     left: -445px; /* Startposition außerhalb des Bildschirms */
     width: 400px;
     height: 55%;
-    background-color: #636563;
+    background-color: #9d9d9d;
     color: white;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
@@ -203,7 +209,7 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-top: 20%;
+    margin-top: 10%;
    }
 
    nav ul li {
@@ -229,14 +235,16 @@ body {
 
     /* Animation für Burger Menü (offen/geschlossen) */
   .burger-menu.active span:nth-child(1) {
+    
     transform: translateY(10px) rotate(45deg);
    }
 
    .burger-menu.active span:nth-child(2) {
     opacity: 0;
-     }
+    }
 
    .burger-menu.active span:nth-child(3) {
+    
     transform: translateY(-10px) rotate(-45deg);
    }
 
@@ -458,9 +466,7 @@ body {
         width: 100%; /* Bildbreite wird auf die Containerbreite begrenzt */
         height: auto; /* Verhältnis bleibt korrekt */
     }
-    .h1:link{
-    color: #000000;
-}
+    
 }
 
 
@@ -606,6 +612,7 @@ nav ul li a {
 }
 
 .hero h2{
+    
     color: #144317;
     font-size: 6vh;
     
@@ -615,7 +622,7 @@ nav ul li a {
 
 .box1{
     position: absolute;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-left: 10%;
     z-index: 1;
 
