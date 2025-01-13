@@ -338,7 +338,7 @@ body {
 
     
 
-    .h1:link{
+    .container h1:link{
         margin-top: 10%;
         color: #000000;
     }
@@ -1588,7 +1588,7 @@ footer a {
         position: relative;
         scroll-snap-type: x mandatory; /* Optional für sanftes Einrasten */
         -webkit-overflow-scrolling: touch;
-        height: auto;
+        height: 440px;
         margin-top: 40%;
         margin-left: 2%;
         margin-right: 2%;
