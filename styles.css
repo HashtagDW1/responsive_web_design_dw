@@ -1502,6 +1502,7 @@ footer a {
 }
 
 .image-container2 {
+    
     width: 100%;
     padding: 10px;
     display: flex;
@@ -1587,7 +1588,7 @@ footer a {
         position: relative;
         scroll-snap-type: x mandatory; /* Optional für sanftes Einrasten */
         -webkit-overflow-scrolling: touch;
-        height: 400px;
+        height: auto;
         margin-top: 40%;
         margin-left: 2%;
         margin-right: 2%;
