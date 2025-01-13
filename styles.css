@@ -14,9 +14,10 @@ body {
 
 /* Header */
 
-@media (max-width: 900px) {
 
 
+
+@media  (max-width: 900px) {
    
 
  
@@ -140,6 +141,7 @@ body {
 
 @media (max-width: 410px) {
 
+   
    
     .Merkliste{
         display:none;
@@ -371,7 +373,7 @@ body {
     
 
     body {
-        font-size: 14px; /* Kleinere Standardgröße */
+        font-size: 14px; 
     }
 
     h3 {
@@ -461,17 +463,14 @@ body {
     }
 
     .product-item img {
-        width: 100%; /* Bild passt sich an die Breite an */
-        height: auto; /* Proportionales Seitenverhältnis */
+        width: 100%; 
+        height: auto; 
     }
     
 
-    .product-item img {
-        width: 100%; /* Bildbreite wird auf die Containerbreite begrenzt */
-        height: auto; /* Verhältnis bleibt korrekt */
-    }
-    
+  
 }
+
 
 
 
@@ -503,10 +502,10 @@ body {
 
 header {
     background-color: #14431700;
-    /*background: linear-gradient(to right , #ffffff 40%, #144317);  Rot zu Blau */
+    
     color: rgb(0, 0, 0);
     padding: 0;
-    /*position: sticky;*/
+    
     top: 0;
     z-index: 2;
 }
@@ -963,8 +962,7 @@ h3{
     z-index: 2;
     width: 50vw;
 
-    /*-webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
-    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);*/
+    
 }
 
     .top .description {
@@ -1242,16 +1240,16 @@ footer a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px; /* Abstand zwischen den Bildern */
+    gap: 10px; 
     width: 100%;
     margin-bottom: 10%;
   }
   
   .images2 img {
-    width: 48%; /* Beide Bilder zusammen nehmen ~100% der Breite mit etwas Platz */
-    height: auto; /* Proportionale Skalierung */
-    border-radius: 8px; /* Optional: Abgerundete Ecken */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Schatten */
+    width: 48%; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   }
   
   .carousel-section {
@@ -1454,7 +1452,7 @@ footer a {
 
 .image-container,
 .text-container {
-    flex: 1 1 50%; /* Beide Container nehmen jeweils 50% ein */
+    flex: 1 1 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1463,15 +1461,13 @@ footer a {
     margin-top: 10%;
     margin-bottom: 10%;
 }
-
-/* Bild-Stil */
 .image-container img {
     max-width: 80%;
     height: auto;
     border-radius: 20px;
 }
 
-/* Text-Stil */
+
 .text-container {
     background-color: #ffffff00;
     text-align: center;
@@ -1499,7 +1495,7 @@ footer a {
 }
 
 .mobile-section {
-    display: none; /* Standardmäßig nicht sichtbar auf Desktop */
+    display: none; 
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
@@ -1514,7 +1510,7 @@ footer a {
 }
 
 .image-container2 img {
-    max-width: 100%; /* Bild nimmt volle Breite ein */
+    max-width: 100%; 
     height: auto;
     border-radius: 8px;
 }
@@ -1541,36 +1537,45 @@ footer a {
     display: none;
 }
 
-/* Media Query für mobile Geräte mit max. Breite von 392px */
+
 @media (max-width: 410px) {
     .text-image-section {
         display: none;
     }
     .mobile-section {
         
-        display: flex; /* Sichtbar und als flexbox angezeigt auf mobilen Geräten */
+        display: flex; 
     }
 
     .image-container2 img {
-        max-width: 100%; /* Bild nimmt volle Breite ein */
+        max-width: 100%; 
     }
 
     .text-container2 h2 {
-        font-size: 18px; /* Kleinere Schrift für die Überschrift */
+        font-size: 18px;
     }
 
     .text-container2 p {
-        font-size: 14px; /* Kleinere Schrift für den Text */
+        font-size: 14px; 
     }
 }
 
 
    .text-image-section3 {
-    display: none; /* Standardmäßig ausblenden (für Desktop) */
+    display: none; 
+    }
+    .product-gallery {
+        justify-content: space-between;
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
+    .product-gallery img {
+        margin: 0;
     }
   
   @media screen and (max-width: 410px) {
-    /* Mobile Ansicht aktivieren */
+    
 
     .ÜberschriftPunkte{
         text-align: center;
@@ -1590,7 +1595,7 @@ footer a {
         overflow-x: auto;
         gap: 10px;
         position: relative;
-        scroll-snap-type: x mandatory; /* Optional für sanftes Einrasten */
+        scroll-snap-type: x mandatory; 
         -webkit-overflow-scrolling: touch;
         height: 440px;
         margin-top: 40%;
@@ -1601,23 +1606,23 @@ footer a {
       
     
     .text-image-section3::-webkit-scrollbar {
-    height: 8px; /* Höhe der horizontalen Scrollbar */
+    height: 8px; 
    }
   
   .text-image-section3::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Hintergrund der Scrollbar-Leiste */
+    background: #f1f1f1;
   }
   
   .text-image-section3::-webkit-scrollbar-thumb {
-    background: #888; /* Farbe des Scrollbar-Griffs */
-    border-radius: 4px; /* Runde Ecken für den Griff */
+    background: #888;
+    border-radius: 4px;
   }
   
   .text-image-section3::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Dunklere Farbe beim Hover */
+    background: #555;
   }
       .text-container3, .image-container3 {
-        flex: 0 0 80%; /* 100% Breite für jedes Element */
+        flex: 0 0 80%;
         display: flex;
         justify-content: center;
         align-items: center;
